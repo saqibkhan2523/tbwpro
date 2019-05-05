@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link rel = "stylesheet" type = "text/css" href = "{% static 'css/main.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="s003">
+      <form action="{% url 'outputtext' %}" method="get" value="{{request.GET.q}}>
+        <div class="inner-form">
+          
+          <div class="input-field second-wrap">
+            <input class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" style="width:700px;height: 50px" id="search" type="text" placeholder="Put you text here" name="q"/>
+          </div>
+          <div class="input-field third-wrap">
+            <button style="margin-left: 300px;margin-top: 30px; width:100px;height: 50px; font-size: 20px;" class="btn-search btn btn-primary" type="submit">
+              check
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
