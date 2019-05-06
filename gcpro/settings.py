@@ -26,7 +26,7 @@ SECRET_KEY = '^!1)nb*6c)r6h!5%q07+b^5e$7h%5j@@@ogvip+5r3p8f#+87v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['gcproapp.herokuapp.com']
+ALLOWED_HOSTS = ['tbwpro.herokuapp.com']
 
 
 # Application definition
